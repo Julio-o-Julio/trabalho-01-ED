@@ -464,7 +464,5 @@ int main(int argc, char *argv[]){
         printf("Cidade com o codigo %d nao encontrada\n", codigo_ibge);
     }
 
-    destruir_arvore(arvore);
-
     return EXIT_SUCCESS;
 }
