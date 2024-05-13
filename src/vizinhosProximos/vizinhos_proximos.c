@@ -11,7 +11,7 @@
 
 int isValidLine(char linha[]) {
     while (*linha != '\0') {
-        if (*linha == '{' || *linha == '}') {
+        if (*linha == '[' || *linha == ']' || *linha == '{' || *linha == '}') {
             return EXIT_FAILURE;
         } else if (*linha == '"') {
             return EXIT_SUCCESS;
@@ -196,16 +196,6 @@ Tnode *buscar_linear_codigo_ibge(Tnode *raiz, int codigo_ibge) {
     }
 
     return NULL;
-}
-
-void imprimir_arvore(Tnode *raiz) {
-    if (raiz == NULL) {
-        return;
-    }
-
-    imprimir_arvore(raiz->esq);
-    printf("%s\n", ((Cidade *)raiz->reg)->nome);
-    imprimir_arvore(raiz->dir);
 }
 
 double graus_para_radianos(double graus) {

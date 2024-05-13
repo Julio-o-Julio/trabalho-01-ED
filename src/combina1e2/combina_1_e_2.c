@@ -79,7 +79,7 @@ void hash_apaga(Thash *h){
 
 int isValidLine(char linha[]) {
     while (*linha != '\0') {
-        if (*linha == '{' || *linha == '}') {
+        if (*linha == '[' || *linha == ']' || *linha == '{' || *linha == '}') {
             return EXIT_FAILURE;
         } else if (*linha == '"') {
             return EXIT_SUCCESS;
