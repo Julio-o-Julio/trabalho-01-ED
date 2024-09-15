@@ -1,4 +1,4 @@
-#include <stdio.h>
+nclude <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,7 +9,7 @@
 #define SEED    0x12345678
 #include "../../include/consulta_cidade.h"
 #include "../../include/vizinhos_proximos.h"
-#include "../../include/cidade.h"
+#include "../../include/cidade.h"#i
 
 uint32_t hashf(const char* str, uint32_t h){
     for (; *str; ++str) {
